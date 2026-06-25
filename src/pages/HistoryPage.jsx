@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import { useAuth } from '../context/AuthContext'
 
-const API = 'http://localhost:3000'
+const API = "https://rental-scam-detector-dbah.onrender.com";
 const RISK_CLASS = { Low: 'low', Medium: 'medium', High: 'high' }
 const RISK_EMOJI = { Low: '🟢', Medium: '🟡', High: '🔴' }
 const SCAM_LABELS = {

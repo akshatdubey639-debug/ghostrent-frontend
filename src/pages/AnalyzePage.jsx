@@ -4,7 +4,7 @@ import Gauge from '../components/Gauge'
 import ScoreCard from '../components/ScoreCard'
 import { useAuth } from '../context/AuthContext'
 
-const API = 'http://localhost:3000'
+const API = "https://rental-scam-detector-dbah.onrender.com";
 
 const RISK_CLASS  = { Low: 'low', Medium: 'medium', High: 'high' }
 const RISK_EMOJI  = { Low: '🟢', Medium: '🟡', High: '🔴' }
