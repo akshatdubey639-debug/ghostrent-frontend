@@ -53,6 +53,9 @@ export default function AuthPage() {
         ...( !isLogin && { name: formData.name } )
       };
       const endpoint = `${import.meta.env.VITE_API_URL}${isLogin ? "/auth/login" : "/auth/signup"}`;
+       
+      console.log("ENV:", import.meta.env.VITE_API_URL);
+       console.log("ENDPOINT:", endpoint); 
 
       const res = await axios.post(endpoint, payload);
       const data = res.data;
